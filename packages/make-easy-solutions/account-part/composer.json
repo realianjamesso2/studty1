@@ -1,0 +1,46 @@
+{
+    "name": "make-easy-solutions/account-part",
+    "description": ":package_description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Author Name",
+            "email": "author@email.com",
+            "homepage": "http://author.com"
+        }
+    ],
+    "homepage": "https://github.com/make-easy-solutions/account-part",
+    "keywords": ["Laravel", "AccountPart"],
+    "require": {
+        "illuminate/support": "~7|~8",
+        "laravel/passport":"^v10.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~5|~6"
+    },
+    "autoload": {
+        "psr-4": {
+            "MakeEasySolutions\\AccountPart\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MakeEasySolutions\\AccountPart\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MakeEasySolutions\\AccountPart\\AccountPartServiceProvider",
+                "MakeEasySolutions\\AccountPart\\Providers\\AuthServiceProvider"
+            ],
+            "aliases": {
+                "AccountPart": "MakeEasySolutions\\AccountPart\\Facades\\AccountPart"
+            }
+        },
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
